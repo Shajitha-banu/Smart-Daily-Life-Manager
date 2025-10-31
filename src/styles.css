@@ -1,0 +1,40 @@
+/* styles.css - simple, clean styling */
+:root{
+  --bg:#f3f6fb; --card:#fff; --muted:#6b7280; --accent:#5b7bff;
+}
+*{box-sizing:border-box}
+body,html,#root{height:100%; margin:0; font-family:Inter,system-ui,Arial}
+
+.page{min-height:100vh; background:var(--bg); display:flex; flex-direction:column}
+.top{background:var(--card); padding:18px 28px; font-weight:700; box-shadow:0 6px 20px rgba(10,20,40,0.06)}
+.brand{font-weight:700}
+.container{display:flex; gap:20px; padding:24px; align-items:flex-start; flex:1}
+.left{width:260px}
+.panel{background:var(--card); padding:12px; border-radius:10px; box-shadow:0 10px 25px rgba(10,20,40,0.05)}
+.menu{list-style:none; padding:8px 0; margin:0}
+.menu li{padding:10px 12px; cursor:pointer; border-radius:8px; color:#1f2937}
+.menu li:hover{background:#f2f5ff}
+.menu li.active{background:linear-gradient(90deg,#5b7bff,#7d6cff); color:#fff}
+
+.right{flex:1}
+.card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 12px 30px rgba(10,20,40,0.06); margin-bottom:16px}
+.center-card{display:flex; align-items:center; justify-content:center; padding:40px}
+.card.thin{margin-top:12px; padding:12px}
+.inline-form{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:12px}
+.inline-form input, .inline-form select { padding:8px; border-radius:8px; border:1px solid #e5e7eb}
+.form-row{display:flex; gap:8px}
+.list{list-style:none; padding:0; margin:0}
+.list li{display:flex; justify-content:space-between; align-items:center; gap:12px; background:#fbfdff; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #f1f5f9}
+.list li.purchased{opacity:0.6; text-decoration:line-through}
+.actions button{margin-left:6px}
+.row{display:flex; gap:8px; align-items:center; justify-content:center; margin-top:10px}
+button{background:var(--accent); color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer}
+button.small{background:#f3f4f6; color:#111; margin-left:8px; padding:6px 10px}
+input, textarea, select{font-size:14px; padding:8px; border-radius:8px; border:1px solid #e6e9ef}
+.foot{padding:12px 24px; text-align:center; color:var(--muted)}
+.grid{display:flex; gap:12px; margin-top:12px; flex-wrap:wrap}
+.tile{background:#fbfcff; padding:16px; border-radius:8px; cursor:pointer; border:1px solid #eef2ff; min-width:130px; text-align:center}
+.muted{color:var(--muted); font-size:13px}
+.msg{background:#fff3cd; padding:8px; border-radius:8px; margin:8px 0; color:#874b00}
+.inline{display:inline-flex; gap:8px; align-items:center}
+.tag{background:#fee2e2; color:#9f1239; padding:2px 6px; border-radius:4px; font-size:12px}
